@@ -62,40 +62,13 @@ class NumbersPage extends StatelessWidget {
           ),
         ),
       ),
-      body: ListView(
-        children: [
-          ItemNumber(
-            object: numbers[0],
-          ),
-          ItemNumber(
-            object: numbers[1],
-          ),
-          ItemNumber(
-            object: numbers[2],
-          ),
-          ItemNumber(
-            object: numbers[3],
-          ),
-          ItemNumber(
-            object: numbers[4],
-          ),
-          ItemNumber(
-            object: numbers[5],
-          ),
-          ItemNumber(
-            object: numbers[6],
-          ),
-          ItemNumber(
-            object: numbers[7],
-          ),
-          ItemNumber(
-            object: numbers[8],
-          ),
-          ItemNumber(
-            object: numbers[9],
-          ),
-        ],
+      body: ListView.builder(
+        itemCount: numbers.length,
+        itemBuilder: (context, index) {
+          return ItemNumber(object: numbers[index]);
+        },
       ),
     );
   }
+  
 }
