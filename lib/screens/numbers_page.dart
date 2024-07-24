@@ -5,47 +5,57 @@ import 'package:tokuapp/models/item.dart';
 class NumbersPage extends StatelessWidget {
   const NumbersPage({super.key});
 
-  final List<Item> numbers = const [
-    Item(
+  final List<ItemModel> numbers = const [
+    ItemModel(
         image: 'assets/images/numbers/number_one.png',
         jpText: 'ichi',
-        enText: 'one'),
-    Item(
+        enText: 'one',
+        sound: 'sounds/numbers/number_one_sound.mp3'),
+    ItemModel(
         image: 'assets/images/numbers/number_two.png',
         jpText: 'ni',
-        enText: 'two'),
-    Item(
+        enText: 'two',
+        sound: 'sounds/numbers/number_two_sound.mp3'),
+    ItemModel(
         image: 'assets/images/numbers/number_three.png',
         jpText: 'san',
-        enText: 'three'),
-    Item(
+        enText: 'three',
+        sound: 'sounds/numbers/number_three_sound.mp3'),
+    ItemModel(
         image: 'assets/images/numbers/number_four.png',
         jpText: 'shi',
-        enText: 'four'),
-    Item(
+        enText: 'four',
+        sound: 'sounds/numbers/number_four_sound.mp3'),
+    ItemModel(
         image: 'assets/images/numbers/number_five.png',
         jpText: 'go',
-        enText: 'five'),
-    Item(
+        enText: 'five',
+        sound: 'sounds/numbers/number_five_sound.mp3'),
+    ItemModel(
         image: 'assets/images/numbers/number_six.png',
         jpText: 'roku',
-        enText: 'six'),
-    Item(
+        enText: 'six',
+        sound: 'sounds/numbers/number_six_sound.mp3'),
+    ItemModel(
         image: 'assets/images/numbers/number_seven.png',
         jpText: 'nana',
-        enText: 'seven'),
-    Item(
+        enText: 'seven',
+        sound: 'sounds/numbers/number_seven_sound.mp3'),
+    ItemModel(
         image: 'assets/images/numbers/number_eight.png',
         jpText: 'hachi',
-        enText: 'eight'),
-    Item(
+        enText: 'eight',
+        sound: 'sounds/numbers/number_eight_sound.mp3'),
+    ItemModel(
         image: 'assets/images/numbers/number_nine.png',
         jpText: 'kyuu',
-        enText: 'nine'),
-    Item(
+        enText: 'nine',
+        sound: 'sounds/numbers/number_nine_sound.mp3'),
+    ItemModel(
         image: 'assets/images/numbers/number_ten.png',
         jpText: 'juu',
-        enText: 'ten'),
+        enText: 'ten',
+        sound: 'sounds/numbers/number_ten_sound.mp3'),
   ];
   @override
   Widget build(BuildContext context) {
@@ -65,10 +75,12 @@ class NumbersPage extends StatelessWidget {
       body: ListView.builder(
         itemCount: numbers.length,
         itemBuilder: (context, index) {
-          return ItemNumber(object: numbers[index]);
+          return ItemNumber(
+            color: const Color(0xffFFA042),
+            object: numbers[index],
+          );
         },
       ),
     );
   }
-  
 }
