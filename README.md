@@ -1,16 +1,33 @@
-# tokuapp
+# Simple Learning Japanese App
 
-A new Flutter project.
+Just Know Simple Words in Japanes Like numbers ,colors andd Family Members 
 
-## Getting Started
+## Widget I used to 
 
-This project is a starting point for a Flutter application.
+- Using Custom Container and GestureDetector To make this Container Clickable and Go to New Screen <br> 
+- Using ClipRRect Widget to make a Good Shape for my Container <br>
+- Using ListView Builder to make screen scrollable and makes Widgets by Builder without type List Method Of Widgets and put it in ListView<br>
+```
+ListView.builder(
+        itemCount: colors.length,
+        itemBuilder: (context, index) {
+          return ItemNumber(
+            object: colors[index],
+            color: Colors.grey,
+          );
+        },
+      ),
+```
+- Using Navigator in onTap attribute to make move to Another Screen <br>
+- Using Expanded Widget to fix flex Exception u can see ir in ```Item_number.dart``` <br>
+- Make Item Model to contains Information for each item like his text in english, japanes, Photo and sound Path <br>
+- Using Row and Column Widget and Image Widget ``` Basic Widget ...```  <br>
+<br>
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
+## Package i used to 
+- audioplayers 6.0.0
+  for Playing some simple Audios 
+<br><br>
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
