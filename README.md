@@ -31,7 +31,7 @@ onTap: () {
               );
             },
 ```
-- Using Expanded Widget to fix flex Exception u can see ir in ```Item_number.dart``` <br>
+- Using Expanded Widget to fix flex Exception u can see it in ```Item_number.dart``` <br>
 - Make Item Model to contains Information for each item like his text in english, japanes, Photo and sound Path <br>
 - Using Row and Column Widget and Image Widget ``` Basic Widget ...```  <br>
 <br>
