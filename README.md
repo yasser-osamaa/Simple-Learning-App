@@ -1,6 +1,6 @@
-# Simple Learning Japanese App
+# Simple Learning Japanese App 
 
-Just Know Simple Words in Japanes Like numbers ,colors and Family Members 
+Just Know Simple Words in Japanes Like numbers ,colors and Family Members Using Flutter
 
 ## Widget I used to 
 
