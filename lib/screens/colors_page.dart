@@ -54,7 +54,7 @@ class ColorPage extends StatelessWidget {
         backgroundColor: const Color(0xff483028),
         iconTheme: const IconThemeData(color: Colors.white),
         title: const Text(
-          'Family Members',
+          'Colors',
           style: TextStyle(
             color: Colors.white,
             fontSize: 22,
@@ -66,7 +66,7 @@ class ColorPage extends StatelessWidget {
         itemBuilder: (context, index) {
           return ItemNumber(
             object: colors[index],
-            color: const Color(0xff854CA9),
+            color: Colors.grey,
           );
         },
       ),

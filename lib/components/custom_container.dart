@@ -11,25 +11,21 @@ class Category extends StatelessWidget {
       onTap: onTap,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 30),
-        child: Container(
-          decoration: const BoxDecoration
-          (
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(40) ,
-              bottomRight:Radius.circular(40) ,
-            
-            ),
-          ),
-          padding: const EdgeInsets.only(left: 16),
-          alignment: Alignment.centerLeft,
-          height: 65,
-          width: double.infinity,
-          color: color,
-          child: Text(
-            text!,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 20,
+        child: ClipRRect(
+          borderRadius: const BorderRadius.only(
+              topLeft: Radius.circular(40), bottomRight: Radius.circular(40)),
+          child: Container(
+            padding: const EdgeInsets.only(left: 16),
+            alignment: Alignment.centerLeft,
+            height: 65,
+            width: double.infinity,
+            color: color,
+            child: Text(
+              text!,
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 20,
+              ),
             ),
           ),
         ),

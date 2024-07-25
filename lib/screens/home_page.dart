@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
       backgroundColor: const Color(0xffFDF5DA),
       appBar: AppBar(
         title: const Text(
-          'Toku',
+          'Learning App',
           style: TextStyle(
             color: Colors.white,
           ),
@@ -24,6 +24,14 @@ class HomePage extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
+          const Text(
+            'Hello!!!\n konnichiwa!!!',
+            style: TextStyle(
+              color: Color(0xff503B33),
+              fontFamily: 'Edu Australia VIC WA NT Hand',
+              fontSize: 45,
+            ),
+          ),
           Category(
             onTap: () {
               Navigator.push(
@@ -60,7 +68,7 @@ class HomePage extends StatelessWidget {
               );
             },
             text: 'Colors',
-            color: const Color(0xff854CA9),
+            color: Colors.grey,
           ),
           Category(
             onTap: () {
